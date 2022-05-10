@@ -56,11 +56,11 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="🏹 Summon Me",
+                             text="🏹 add Me",
                              url="https://t.me/MikuXProBot?startgroup=true"),
                         InlineKeyboardButton(
-                             text="🗞️ Repo",
-                             url="https://github.com/h0daka/Miku-Nakano"),
+                             text=" 🦋OWNER🦋",
+                             url="https://t.me/aboutbobby"),
                     ],
                    [                  
                        InlineKeyboardButton(
@@ -81,7 +81,7 @@ HELP_STRINGS = """
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [or](https://telegra.ph/file/85a404cf9edbd797c829f.jpg) *!*
+For all command use /* [or](https://telegra.ph/file/04a34c24faaf818d48c10.jpg) *!*
 """.format(
     dispatcher.bot.first_name,""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
@@ -214,10 +214,10 @@ def start(update: Update, context: CallbackContext):
                   [                  
                        InlineKeyboardButton(
                              text="🚑 Support",
-                             url=f"https://t.me/MikusSupport"),
+                             url=f"https://t.me/tamil_comrades_x"),
                        InlineKeyboardButton(
                              text="🛰️ Updates",
-                             url="https://t.me/MikuXUpdates")
+                             url="https://t.me/tamil_comrades_x")
                      ] 
                 ]
             ),
@@ -329,12 +329,12 @@ def miku_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🌏 My Master", url="t.me/h0daka"),
+                    InlineKeyboardButton(text="🌏 My Master", url="https://t.me/aboutbobby"),
                     InlineKeyboardButton(text="✨ Try Inline", switch_inline_query_current_chat="",),
                  ],
                  [
-                    InlineKeyboardButton(text="🕊️ Updates", url="t.me/MikuXUpdates"),
-                    InlineKeyboardButton(text="🚑 Support", url="t.me/Mikussupport"),
+                    InlineKeyboardButton(text="🕊️ Updates", url="https://t.me/tamil_comrades_x"),
+                    InlineKeyboardButton(text="🚑 Support", url="https://t.me/tamil_comrades_x"),
                  ],
                  [
                     InlineKeyboardButton(text="❌ Back", callback_data="miku_back")
@@ -548,7 +548,7 @@ def donate(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True)
 
-        if OWNER_ID != 5291415314 and DONATION_LINK:
+        if OWNER_ID != 5299049743 and DONATION_LINK:
             update.effective_message.reply_text(
                 "You can also donate to the person currently running me "
                 "[here]({})".format(DONATION_LINK),
@@ -597,7 +597,7 @@ def main():
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="[► Summon Me◄]",
+                             text="[► add Me◄]",
                              url="https://t.me/MikuXProBot?startgroup=true")
                      ] 
                 ]

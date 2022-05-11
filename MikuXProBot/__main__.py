@@ -56,15 +56,15 @@ def get_readable_time(seconds: int) -> str:
 buttons = [
     [
                         InlineKeyboardButton(
-                             text="🏹 add Me",
+                             text="💥𝐀ᴅᴅ 𝐌ᴇ 𝐓ᴏ 𝐘ᴏᴜʀ 𝐆ʀᴏᴜᴘ💥",
                              url="https://t.me/MikuXProBot?startgroup=true"),
                         InlineKeyboardButton(
-                             text=" 🦋OWNER🦋",
+                             text="🥵𝐅ᴜ*ᴋᴇʀ🥵",
                              url="https://t.me/aboutbobby"),
                     ],
                    [                  
                        InlineKeyboardButton(
-                             text="🔐 Help",
+                             text="🕵️‍♀️𝐇ᴇʟᴘ & 𝐂ᴏᴍᴍᴀɴᴅs🕵️‍♂️",
                              callback_data="help_back"),
                         InlineKeyboardButton(
                              text=" 💫 About Me",
@@ -81,7 +81,7 @@ HELP_STRINGS = """
  • /settings:
    • in PM: will send you your settings for all supported modules.
    • in a group: will redirect you to pm, with all that chat's settings.
-For all command use /* [or](https://telegra.ph/file/04a34c24faaf818d48c10.jpg) *!*
+For all command use /* [or](https://telegra.ph/file/a0346264268665927f17a.jpg) *!*
 """.format(
     dispatcher.bot.first_name,""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\nKindly use ! for commands if / is not working\n")
@@ -216,7 +216,7 @@ def start(update: Update, context: CallbackContext):
                              text="🚑 Support",
                              url=f"https://t.me/tamil_comrades_x"),
                        InlineKeyboardButton(
-                             text="🛰️ Updates",
+                             text="😈𝐃ᴇᴀʀ 𝐂ᴏᴍʀᴀᴅᴇ😈",
                              url="https://t.me/tamil_comrades_x")
                      ] 
                 ]
@@ -275,7 +275,7 @@ def help_button(update, context):
                 reply_markup=InlineKeyboardMarkup([[InlineKeyboardButton(text="Back",
                                        callback_data="help_back"),
                   InlineKeyboardButton(text="Support",
-                                       url="t.me/Mikussupport")]]))
+                                       url="t.me/BOBBYXWORLD")]]))
 
         elif prev_match:
             curr_page = int(prev_match.group(1))
@@ -329,7 +329,7 @@ def miku_callback_data(update, context):
             reply_markup=InlineKeyboardMarkup(
                 [
                  [
-                    InlineKeyboardButton(text="🌏 My Master", url="https://t.me/aboutbobby"),
+                    InlineKeyboardButton(text="🥵𝐅ᴜ*ᴋᴇʀ🥵", url="https://t.me/aboutbobby"),
                     InlineKeyboardButton(text="✨ Try Inline", switch_inline_query_current_chat="",),
                  ],
                  [
@@ -597,7 +597,7 @@ def main():
                 [
                   [                  
                        InlineKeyboardButton(
-                             text="[► add Me◄]",
+                             text="[►add Me◄]",
                              url="https://t.me/MikuXProBot?startgroup=true")
                      ] 
                 ]
